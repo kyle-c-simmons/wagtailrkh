@@ -5,4 +5,11 @@
 {% block body_class %}template-homepage{% endblock %}
 
 {% block content %}
+
+    <h1>{{ self.title }}</h1>
+    <p>{{ self.body  }}</p>
+
+<a href="{{page.external_url}}" class="btn btn-info" role="button">External link</a>
+<a href="{{page.internal_url}}" class="btn btn-info" role="button">Internal link</a>
+
 {% endblock %}

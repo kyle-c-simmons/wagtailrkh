@@ -10,6 +10,8 @@ from wagtail.core.blocks import (
 
 
 class HomePage(Page):
+    templates = 'home/home_page.html'
+    
     body = StreamField([
         ('paragraph', blocks.RichTextBlock(required=False)),
         ('image', ImageChooserBlock(icon="image", required=False)),
